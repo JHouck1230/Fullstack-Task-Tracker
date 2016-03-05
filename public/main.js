@@ -21,14 +21,10 @@ function getAllTodos() {
 				$todo.removeAttr('id');
 				$todo.find('.desc').text(todo.desc);
 				$todo.find('.dueDate').text(todo.dueDate);
-				console.log('todo.isComplete: ' ,todo.isComplete);
-				console.log('crossOff: ', $(this).hasClass('crossOff'))
 				if(todo.isComplete === true) {
-					console.log('$todo: ',$todo);
 					$todo.children().addClass('crossOff');
 					$todo.find('.compPic').removeClass('hide');
 				}
-				console.log('crossOff: ', $(this).hasClass('crossOff'))
 				return $todo;
 			});
 			$('#todoTable').append($todos);

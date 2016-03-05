@@ -10,6 +10,10 @@
 	font-size: x-large;
 }
 
+.output {
+	margin-top: 10px;
+}
+
 .completed {
   background: ghostwhite;
   height: 22px;
@@ -26,7 +30,7 @@
 }
 
 .completed:hover {
-	background-color: lightcyan;
+	background-color: aquamarine;
 }
 
 .completed:active {
