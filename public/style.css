@@ -1,0 +1,46 @@
+ body {
+	background-color: lightblue;
+}
+
+#template {
+	display: none;
+}
+
+.table {
+	font-size: x-large;
+}
+
+.completed {
+  background: ghostwhite;
+  height: 22px;
+  width: 24px;
+  display: inline-block;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.compPic {
+	height: 22px;
+	width: 24px;
+	display: block;
+}
+
+.completed:hover {
+	background-color: lightcyan;
+}
+
+.completed:active {
+  box-shadow: inset 0px 0px 5px 2px;
+}
+
+.crossOff {
+	text-decoration: line-through;
+}
+
+.hide {
+	display: none;
+}
+
+.removeCheck {
+	float: left;
+}

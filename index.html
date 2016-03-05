@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Full Stack Task Tracker</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="jumbotron">
+			  <h2>Let's Make a ToDo List!</h2>
+		  </div>
+	  </div>
+	</div>
+  <div class="container">
+			<form class="form-horizontal">
+	  		<div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
+				  <div class="form-group">
+				    <input type="text" class="input form-control" id="descInput" placeholder="Description">
+				  </div>
+			  </div>
+	  		<div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">			  
+				  <div class="form-group">
+				    <input type="date" class="input form-control" id="dueInput">
+				  </div>
+			  </div>
+	  		<div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
+				  <button id='submit' type="submit" class="input btn btn-default">Add</button>
+			  </div>
+			</form>
+		</div>
+  </div>
+  <div class="container">
+  	<div class="row">
+  		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+				<table class='table table-border'>
+					<thead>
+						<tr>
+							<th>Description</th>
+							<th>Due Date</th>
+							<th colspan='2'>Completed</th>
+						</tr>
+					</thead>
+					<tbody id="todoTable">
+						<tr class='item' id="template">
+							<td class='output desc'>Buy Eggs</td>
+							<td class='output dueDate'>Tomorrow</td>
+							<td class='compCheck'>
+								<div class='completed output'>
+									<img class='hide compPic' src='http://vignette4.wikia.nocookie.net/okami/images/f/f0/Check_mark.png/revision/latest?cb=20130520141819'>
+								</div>
+							</td>
+							<td class="removeBut">
+								<button type="button" class="remove btn btn-danger btn-xs">
+									<span class='glyphicon glyphicon-remove'></span>
+								</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
